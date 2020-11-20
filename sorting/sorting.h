@@ -1,5 +1,4 @@
 #pragma once
-// -*- lsst-c++ -*-
 /*
 *	@Author : Mehmet Gokcay Kabatas - github:/MGokcayK
 *

@@ -49,9 +49,10 @@ void bubbleSort(std::vector<T>& vector, bool asc)
     }
 }
 // function speacialization to specify of accepted typestemplate void bubbleSort(std::vector<int>& vector, bool asc);
-template void bubbleSort(std::vector<double>& vector, bool asc);
-template void bubbleSort(std::vector<float>& vector, bool asc);
-template void bubbleSort(std::vector<std::string>& vector, bool asc);
+template void bubbleSort(std::vector<int>&, bool);
+template void bubbleSort(std::vector<double>&, bool);
+template void bubbleSort(std::vector<float>&, bool);
+template void bubbleSort(std::vector<std::string>&, bool);
 
 
 template <typename T>
@@ -83,10 +84,10 @@ void insertionSort(std::vector<T>& vector, bool asc)
     }
 }
 // function speacialization to specify of accepted types
-template void insertionSort(std::vector<int>& vector, bool asc);
-template void insertionSort(std::vector<double>& vector, bool asc);
-template void insertionSort(std::vector<float>& vector, bool asc);
-template void insertionSort(std::vector<std::string>& vector, bool asc);
+template void insertionSort(std::vector<int>&, bool);
+template void insertionSort(std::vector<double>&, bool);
+template void insertionSort(std::vector<float>&, bool);
+template void insertionSort(std::vector<std::string>&, bool);
 
 template <typename T>
 void selectionSort(std::vector<T>& vector, bool asc)
@@ -113,7 +114,7 @@ void selectionSort(std::vector<T>& vector, bool asc)
     }
 }
 // function speacialization to specify of accepted types
-template void selectionSort(std::vector<int>& vector, bool asc);
-template void selectionSort(std::vector<double>& vector, bool asc);
-template void selectionSort(std::vector<float>& vector, bool asc);
-template void selectionSort(std::vector<std::string>& vector, bool asc);
+template void selectionSort(std::vector<int>&, bool);
+template void selectionSort(std::vector<double>&, bool);
+template void selectionSort(std::vector<float>&, bool);
+template void selectionSort(std::vector<std::string>&, bool);

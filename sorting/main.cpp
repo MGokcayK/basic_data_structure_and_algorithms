@@ -1,6 +1,8 @@
 #include "sorting.h"
 
-void main()
+using namespace std;
+
+int main()
 {
     srand(time(0));  // Initialize random number generator.
 
@@ -15,9 +17,11 @@ void main()
     cout << " Unsorted Vector " << endl;
     printVector(vectorForOrder); // print unsorted vector
 
-    selectionSort(vectorForOrder, true); // call sorting method
+    insertionSort(vectorForOrder, true); // call sorting method
 
     cout << endl << " Sorted Vector " << endl;
     printVector(vectorForOrder); // print sorted method
-    
+
+
+    return 0;
 }

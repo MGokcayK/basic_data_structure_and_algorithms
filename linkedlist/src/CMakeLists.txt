@@ -1,0 +1,5 @@
+SET (TARGET LLIST)
+
+ADD_EXECUTABLE (${TARGET}
+		main.cpp
+		)

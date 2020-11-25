@@ -9,13 +9,20 @@
 
 #pragma once
 #include <iostream>
+#include <string>
 
 
 /// <summary>
 /// Basic Linked List class. It is templated. 
+/// <para>
 /// It accept primitives such as  `int`, `float`, 
-/// `double`, 'char`,`string` etc. 
+/// `double`, 'char`,`string` etc. or custom 
+/// structures. For custom structures please 
+/// overload the `&lt;&lt;` operator.
+/// </para>
+/// <para>
 /// It has only `Default Contstructor`.
+/// </para>
 /// </summary>
 /// <typeparam name="Dtype"></typeparam>
 template <class Dtype>

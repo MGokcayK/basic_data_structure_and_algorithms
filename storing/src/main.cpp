@@ -1,5 +1,6 @@
 #include <iostream>
 #include "store.h"
+#include "tree.h"
 
 // Custom structure 
 struct cstr
@@ -121,12 +122,31 @@ void customDtype_example()
 
 }
 
+void binary_tree_example()
+{
+	int data[] = { 47,25,77,11,43,65,93,7,17,31,44,68 };
+	
+	gstr::binaryTree<int> tree;
+	
+	for (auto item : data)
+	{
+		tree.addNode(item, true);
+	}
+
+	// tree print orders
+
+	//tree.inorder();
+	//tree.preorder();
+	tree.postorder();
+}
 
 int main()
 {
-	stack_example();
-	queue_example();
-	customDtype_example();
+	//stack_example();
+	//queue_example();
+	//customDtype_example();
+
+	binary_tree_example();
 
 	return 0;
 }

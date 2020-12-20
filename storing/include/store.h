@@ -70,7 +70,7 @@ namespace gstr
 		{
 			if (this->isEmpty())
 			{
-				return INT_MIN;
+				return *this->container;
 			}
 			Dtype tmp = this->container[this->loc];
 			this->container[this->loc] = NULL;
